@@ -12,7 +12,8 @@ import {
   DropdownItem,
   NavbarText,
 } from 'reactstrap';
-import '../Styles/navbar.css' 
+import '../Styles/navbar.css'
+import logo from '../Asset/logo.jpg';
 
 function NavigationBar() {
   const navigate = useNavigate ();
@@ -26,7 +27,7 @@ function NavigationBar() {
     <div>
       <Navbar color='#4A90E2' className='navstyle' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <NavbarBrand color='white' href="/" className="me-auto light">
-         <b>HealthHub</b> 
+         <b className='white'>Health<span className='logo'>Hub </span></b> 
           </NavbarBrand>
 
         {/* Flexbox style applied to Nav items  I also remove navbar*/}

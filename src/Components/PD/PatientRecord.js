@@ -6,8 +6,10 @@ import { Card, Col, Row } from 'reactstrap';
 const PatientDashboard = () => {
   // Sample patient data
   const patients = [
-    { id: 1, name: 'Emmanuella Oze', age: 29, gender: 'Female', patientId: 'f/24/0243', diagnosis: 'Diabetes', appointmentType: 'Follow up', emergencycontact: '08163338980', contact: '08137880945', vitals: { heartRate: '80 bpm', bloodPressure: '120/80 mmHg' }, labResults: ['Blood Test', 'X-Ray'], clinicalNotes: ['Note 1', 'Note 2'], billingStatus: 'Paid' },
-    { id: 2, name: 'Jacob Green', age: 34, gender: 'Male', patientId: 'm/24/0045', diagnosis: 'Hypertension', appointmentType: 'Consultancy', contact: '08137880945', emergencycontact: '08163338980', vitals: { heartRate: '72 bpm', bloodPressure: '130/85 mmHg' }, labResults: ['CT Scan'], clinicalNotes: ['Note 3'], billingStatus: 'Pending' },
+    { id: 1, name: 'Emmanuella Oze', age: 29, gender: 'Female', patientId: 'f/24/0243', diagnosis: 'Diabetes', appointmentType: 'Follow up', emergencycontact: '08163338980', contact: '08137880945', vitals: { heartRate: '80 bpm', bloodPressure: '120/80 mmHg' }, labResults: ['Blood Test', 'X-Ray'], clinicalNotes: ['to be admitted'], billingStatus: 'Paid' },
+    { id: 2, name: 'Jacob Green', age: 34, gender: 'Male', patientId: 'm/24/0045', diagnosis: 'Hypertension', appointmentType: 'Consultancy', contact: '08137880945', emergencycontact: '08163338980', vitals: { heartRate: '72 bpm', bloodPressure: '130/85 mmHg' }, labResults: ['CT Scan'], clinicalNotes: ['Hypertension'], billingStatus: 'Pending' },
+    { id: 2, name: 'Hajir', age: 24, gender: 'Femal', patientId: 'f/24/0245', diagnosis: 'Prgenant', appointmentType: 'Consultancy', contact: '08137883445', emergencycontact: '08163338980', vitals: { heartRate: '70 bpm', bloodPressure: '130/85 mmHg' }, labResults: ['CT Scan'], clinicalNotes: ['Bedrest'], billingStatus: 'Pending' },
+    { id: 2, name: 'Hamza', age: 54, gender: 'Male', patientId: 'm/24/0345', diagnosis: 'Hypertension', appointmentType: 'Consultancy', contact: '08157880945', emergencycontact: '08163338980', vitals: { heartRate: '67 bpm', bloodPressure: '130/85 mmHg' }, labResults: ['CT Scan'], clinicalNotes: ['Outpatient'], billingStatus: 'Pending' },
     // Add more patients here
   ];
 

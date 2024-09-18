@@ -2,27 +2,35 @@ import React, {useState, Fragment} from 'react'
 import { Table, Card, CardBody, CardHeader, CardTitle, CardText, Button, CardFooter } from 'reactstrap'
 import { FaEye } from "react-icons/fa";
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { useNavigate } from 'react-router';
 function Upcoming() {
 
   const appointments = [
     {
-      date: '27 September 2024',
+      date: '27th September 2024',
       time: '9:00 am',
       patientName: 'Emmanuella Oze',
       patientId: 'f/24/0243',
       appointmentType: 'Follow up',
     },
     {
-      date: '30 September 2024',
+      date: '30th September 2024',
       time: '3:00 pm',
       patientName: 'Jacob',
       patientId: 'm/24/0045',
       appointmentType: 'Consultancy',
     },
     {
-      date: '1 October 2024',
+      date: '1st October 2024',
       time: '2:00 pm',
       patientName: 'Haajir',
+      patientId: 'f/24/0045',
+      appointmentType: 'Consultancy',
+    },
+    {
+      date: '5th October 2024',
+      time: '2:00 pm',
+      patientName: 'Aisha',
       patientId: 'f/24/0045',
       appointmentType: 'Consultancy',
     },
@@ -30,13 +38,19 @@ function Upcoming() {
 
  const [modal, setModal] = useState(false);
  const [selectedPatient, setSelectedPatient] = useState(null);
+ const navigate = useNavigate();
   const toggle = () => setModal(!modal);
 
   const viewPatient = (appointment) => {
     setSelectedPatient(appointment);
     toggle();
   }
-
+  const medHistory = ()=>{
+    navigate('/patientProfile');
+   }
+ const visitProfile = ()=>{
+  navigate('/patientProfile');
+ }
   
   return (
   <div>
@@ -125,10 +139,10 @@ function Upcoming() {
        
 </ModalBody>
 <ModalFooter>
-<Button onClick={toggle} >
+<Button onClick={medHistory} >
     View Medical History
   </Button>
-  <Button onClick={toggle} >
+  <Button onClick={visitProfile} >
     View Profile
   </Button>
 </ModalFooter>

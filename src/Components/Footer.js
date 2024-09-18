@@ -44,22 +44,3 @@ const SolutionsSection = () => {
 };
 
 export default SolutionsSection;
-
-
-
-// import React from 'react';
-// import '../Styles/Solutions.css'// Add your own styles here
-
-// const SolutionsSection = () => {
-//   return (
-//     <section className="solutions">
-//       <h2>Multiple solutions</h2>
-//       <p>
-//         Through co-creation with our customers, we bring together on a single platform the most
-//         relevant solutions for clinics and healthcare professionals to connect with their customers.
-//       </p>
-//     </section>
-//   );
-// };
-
-// export default SolutionsSection;

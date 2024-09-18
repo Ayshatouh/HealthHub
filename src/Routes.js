@@ -8,7 +8,8 @@ import Upcoming from './Components/DD/Upcoming';
 import Patient from './Components/PD/Patient';
 import DoctorProfile from './Components/DD/DoctorProfile';
 import ApptRequest from './Components/DD/ApptRequest';
-import PatientRecord from './Components/PD/PatientRecord';
+import PatientRecord from './Components/PD/PatientRecord'
+import PatientProfile from './Components/DD/PatientProfile';
 
 const AppRoutes = () => {
   return (
@@ -21,7 +22,12 @@ const AppRoutes = () => {
       <Route path='/upcoming' element = {<Upcoming/>} />
       <Route path ='/doctorprofile' element ={<DoctorProfile/>} />
       <Route path='/request' element ={<ApptRequest/>}  />
-      <Route path = 'patientinformation' element = {<PatientRecord/>} />
+      <Route path = '/patientinformation' element ={<PatientRecord/>} />
+      <Route path = '/patientProfile' element = {<PatientProfile/>} />
+      {/* <Route path ='/patientProfile' element = {<PatientProfile/>} /> */}
+     
+     
+    
     </Routes>
   );
 };

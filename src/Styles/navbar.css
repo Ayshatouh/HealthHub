@@ -9,9 +9,12 @@
     color: white;
   }
   .logo {
-    height: 40px;
+    color: #b0d0f5;
   }
-  
+  .white{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
   .toggle-button {
     background: none;
     border: none;

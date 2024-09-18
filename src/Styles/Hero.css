@@ -82,15 +82,17 @@
     .highlight {
       color: #4A90E2;
     }
-    .tag{
+    .tag h3, p {
       color: white;
-     
     }
     
     .learn-more-btn {
       background-color: #4A90E2;
       color: #fff;
+      font-weight: 600;
       padding: 10px 20px;
+      border-radius: 10px;
+      margin-left: 10px;
       border: none;
       cursor: pointer;
     }
