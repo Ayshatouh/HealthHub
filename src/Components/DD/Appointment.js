@@ -7,8 +7,8 @@ import Upcoming from "./Upcoming";
 
 const Appointment = () => {
     const navigate = useNavigate();
-    const viewUpcoming =()=>{
-        navigate('/upcoming');
+    const viewRequest =()=>{
+        navigate('/request');
     } 
     
    
@@ -21,7 +21,7 @@ const Appointment = () => {
           <div className="icon">✔️</div>
           <h3>0</h3>
           <p>Appointments Request</p>
-          <button className="view-btn" onClick={viewUpcoming}>View</button>
+          <button className="view-btn" onClick={viewRequest}>View</button>
         </div>
       </Card>
 
