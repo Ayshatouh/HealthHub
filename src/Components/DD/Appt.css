@@ -1,0 +1,72 @@
+/* Dashboard container to hold the cards in a grid layout */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #4A90E2;
+    padding: 20px;
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+  }
+  .vieweye{
+    font-size: 20px;
+    color: #4A90E2;
+    cursor: pointer;
+  }
+/* i remove it from above
+  align-items: center;
+  justify-content: center; */
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Card content */
+  .card-content {
+    text-align: center;
+    height: 300px;
+  }
+  
+  /* Icon styling */
+  .icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Heading for numbers (0) */
+  h3 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+  }
+  
+  /* Paragraph for description */
+  p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* View button */
+  .view-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .view-btn:hover {
+    background-color: #4A90E2;
+  }
+  

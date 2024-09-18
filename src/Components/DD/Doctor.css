@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #4A90E2;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+    
+  }
+/* {  border-bottom: 2px solid #ddd;} */
+  
+  .tabs span {
+    font-size: 30px;
+    color: #4A90E2;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tabs span:hover {
+    color: #4A90E2;
+    font-size: 40px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .tab-content {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  h2 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: white;
+    font-size: 14px;
+  }
+  .updateprofile{
+    color: white;
+    font-weight: 600;
+    margin-right: 20px;
+    cursor: pointer;
+  }

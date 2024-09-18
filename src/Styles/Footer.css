@@ -1,0 +1,42 @@
+.footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 10px;
+    color: black;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+  }
+  .contact p{
+    color: black;
+  }
+  .address p{
+    color: black;
+  }
+  .footer-section a {
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+  }
+  .footer-bottom {
+    margin-top: 20px;
+   
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #4A90E2;
+  }
+  .footer-bottom p{
+    color: white;
+    text-align: center;
+  }
