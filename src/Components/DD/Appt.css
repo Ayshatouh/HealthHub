@@ -32,26 +32,27 @@
   /* Card content */
   .card-content {
     text-align: center;
+    padding-top: 70px;
     height: 300px;
   }
   
   /* Icon styling */
   .icon {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 34px;
+    color: #4A90E2;
   }
   
   /* Heading for numbers (0) */
   h3 {
     margin: 0;
     font-size: 36px;
-    color: #333;
+    color: black;
   }
   
   /* Paragraph for description */
   p {
-    font-size: 16px;
-    color: #666;
+    font-size: 20px;
+    color: black;
   }
   
   /* View button */

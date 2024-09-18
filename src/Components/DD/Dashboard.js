@@ -4,7 +4,7 @@ import '../DD/Doctor.css';
 import Appointment from "./Appointment";
 import Upcoming from "./Upcoming";
 import ChatRoom from "./Chatroom";
-import { BiBookReader, BiChat } from "react-icons/bi";
+import { BiBookReader, BiChat, BiCalendarEvent, BiTime, BiBook, BiBookOpen } from "react-icons/bi";
 
 const Dashboard = () => {
   // State to manage which tab is active
@@ -56,10 +56,10 @@ const Dashboard = () => {
         <p className="updateprofile" onClick={updateProfile} >Update Profile</p>
       </header>
       <div className="tabs">
-        <span onClick={() => setActiveTab("projects")}><BiBookReader /></span>
-        <span onClick={() => setActiveTab("services")}><BiBookReader /> </span>
-        <span onClick={() => setActiveTab("chat")}><BiChat /></span>
-        <span onClick={() => setActiveTab("wallet")}><BiBookReader /></span>
+        <span onClick={() => setActiveTab("projects")}><BiBookReader /><p>Dashboard</p></span>
+        <span onClick={() => setActiveTab("services")}><BiCalendarEvent /><p>Upcoming Appointments</p> </span>
+        <span onClick={() => setActiveTab("chat")}><BiChat /><p>ChatRoom</p></span>
+        <span onClick={() => setActiveTab("wallet")}><BiBook /><p>MyLearningRoom</p></span>
       </div>
       <div className="content">{renderContent()}</div>
     </div>

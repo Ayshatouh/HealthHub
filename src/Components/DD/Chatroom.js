@@ -7,7 +7,7 @@ const ChatRoom = () => {
   const [messages, setMessages] = useState([]);
   const [file, setFile] = useState(null);
 
-  // const videoRef = useRef =(null);
+   //const videoRef = useRef =(null);
   // temp incoming messages for the side panel
   const incomingMessages = [
     {
@@ -50,11 +50,18 @@ const ChatRoom = () => {
   // const handleStartVideoCall = async () => {
   //   try {
   //     const stream = await navigator.mediaDevices.getUserMedia({
-  //       video: { width: 640, height: 480 }, // Example resolution, you can adjust this
-  //       audio: true
+  //       video: { width: 640, height: 480 }, // Adjust resolution as needed
+  //       audio: true,
   //     });
+
+  //     // Log the stream object to verify that the media stream is being received
+  //     console.log('Media stream:', stream);
+
   //     if (videoRef.current) {
-  //       videoRef.current.srcObject = stream;
+  //       console.log('VideoRef is valid:', videoRef.current);
+  //       videoRef.current.srcObject = stream; // Assign stream to video element
+  //     } else {
+  //       console.error('videoRef.current is null');
   //     }
   //   } catch (error) {
   //     console.error('Error accessing media devices:', error);
@@ -67,7 +74,7 @@ const ChatRoom = () => {
     <div className="chat-room-container">
       {/* Incoming messages list on the side */}
       <div className="incoming-messages">
-        <h5>New Messages</h5>
+        <h5>Today's Appointment</h5>
         <ul>
           {incomingMessages.map((msg, index) => (
             <li key={index}><h6><b>{msg.name}</b></h6>
@@ -117,7 +124,7 @@ const ChatRoom = () => {
           </label>
 
           {/* Video call button */}
-
+          {/* <video ref={videoRef} autoPlay style={{ width: '640px', height: '480px' }} /> */}
           <button className="video-call-btn" onClick={handleStartVideoCall}>
           <BiVideo/> Video Call
           </button>

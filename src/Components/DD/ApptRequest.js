@@ -40,7 +40,10 @@ function ApptRequest() {
      toggle();
   }
 //accept notification
-  
+const acceptRequest = () =>{
+  alert ("Notification will be Sent");
+}
+
   
   return (
   <div>
@@ -129,10 +132,10 @@ function ApptRequest() {
        
 </ModalBody>
 <ModalFooter>
-<Button onClick={toggle} >
+<Button onClick={()=> {toggle(); acceptRequest(); } } >
     Accept
   </Button>
-  <Button onClick={toggle} >
+  <Button onClick={()=> {toggle(); acceptRequest(); } } >
     Decline
   </Button>
 </ModalFooter>

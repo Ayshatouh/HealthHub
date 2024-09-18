@@ -17,13 +17,18 @@ body {
   .tabs {
     display: flex;
     justify-content: space-around;
-    background-color: white;
+    background-color: #ffffff;
     padding: 10px;
     
   }
 /* {  border-bottom: 2px solid #ddd;} */
-  
+  .tabs p{
+    color: #4A90E2;
+    font-size: small;
+    margin-right: 100px;
+  }
   .tabs span {
+    position: relative;
     font-size: 30px;
     color: #4A90E2;
     font-weight: 600;

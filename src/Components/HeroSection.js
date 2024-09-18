@@ -72,12 +72,8 @@ function HeroSection(props) {
   });
 
   return (
-    <section className="hero d-flex">
-      <div className="hero-text">
-        <h1>Connecting <span className="highlight">Patients</span></h1>
-        <p>Complete solution for managing appointments, patients, and professionals, all in one place.</p>
-        <button className="learn-more-btn" onClick={toggleModal}>Chat with our Assistant</button>
-      </div>
+    <section className="hero">
+     
 
       <div className="hero-carousel">
         <Carousel activeIndex={activeIndex} next={next} previous={previous} className="tag">
@@ -99,7 +95,13 @@ function HeroSection(props) {
           />
         </Carousel>
       </div>
-      {/* Modal for Chatbot */}
+      <div className="hero-text">
+        <h1>Connecting <span className="highlight">Patients</span></h1>
+        <p>Complete solution for managing appointments, patients, and professionals, all in one place.</p>
+        <button className="learn-more-btn" onClick={toggleModal}>Chat with our Assistant</button>
+      </div>
+
+      {/* Modal for HealthHub Assistant */}
       <Modal isOpen={modalOpen} toggle={toggleModal} size="lg">
         <ModalHeader toggle={toggleModal}>Chat with Our Assistant</ModalHeader>
         <ModalBody>

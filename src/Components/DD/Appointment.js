@@ -3,6 +3,7 @@ import '../DD/Appt.css';
 import { useNavigate } from "react-router";
 import { Card } from "reactstrap";
 import Upcoming from "./Upcoming";
+import { BiCalendarCheck, BiUser, BiFileMedical  } from 'react-icons/bi'
 
 
 const Appointment = () => {
@@ -10,7 +11,9 @@ const Appointment = () => {
     const viewRequest =()=>{
         navigate('/request');
     } 
-    
+    const viewPatient = ()=>{
+      navigate('/patientinformation');
+    }
    
 
 
@@ -18,8 +21,8 @@ const Appointment = () => {
     <div className="dashboard-container">
       <Card >
         <div className="card-content">
-          <div className="icon">✔️</div>
-          <h3>0</h3>
+          <div className="icon" > <BiCalendarCheck/> </div>
+          
           <p>Appointments Request</p>
           <button className="view-btn" onClick={viewRequest}>View</button>
         </div>
@@ -27,17 +30,17 @@ const Appointment = () => {
 
       <Card>
         <div className="card-content">
-          <div className="icon">🕒</div>
-          <h3>0</h3>
+          <div className="icon"> <BiUser/></div>
+         
           <p>Patient Information</p>
-          <button className="view-btn">View</button>
+          <button className="view-btn" onClick={viewPatient} >View</button>
         </div>
       </Card>
 
       <Card>
         <div className="card-content">
-          <div className="icon">❌</div>
-          <h3>0</h3>
+          <div className="icon"><BiUser/></div>
+        
           <p>Clinial Notes</p>
           <button className="view-btn">View</button>
         </div>
