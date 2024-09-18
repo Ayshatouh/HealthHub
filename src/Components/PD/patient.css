@@ -1,0 +1,110 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4A90E2; /* Blue background */
+    padding: 10px 20px;
+  }
+  
+  .header__left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__title {
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .header__right {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .header__update {
+    margin-left: 5px;
+    color: white;
+    font-size: 16px;
+  }
+  .bodySection {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f4f8; /* Light background for the body section */
+  }
+  
+  .bodySection__left {
+    margin: 1%;
+    margin-left: 20%;
+    padding: 0px 5px;
+    width: 35%;
+    height: 10%;
+    background-color: white;
+    box-shadow: 0 2px 5px #4A90E2;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    justify-items: center;
+    position: relative;
+  }
+  
+  .options__list {
+    list-style-type: none;
+    padding: 5%;
+    display:flex;
+    gap: 10%;
+  }
+  
+  .options__list li {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    
+  }
+  
+  .options__list li:hover {
+    color: blue; /* Change color on hover */
+  }
+  
+  .bodySection__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .videoConsultation__text {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  .videoConsultation{
+    box-shadow: 0 2px 5px #4A90E2;
+    margin: 20px 50px;
+    padding: 50px;
+    width: 50%;
+    border-radius: 5px;
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+  }
+  .videoConsultation:hover{
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .videoConsultation h3, p{
+    text-align: center;
+  }
+  .bgPic{
+    width: 50%;
+    height: 60%;
+    position: absolute;
+ }
+ 
+  
+  

@@ -8,6 +8,7 @@ import Upcoming from './Components/DD/Upcoming';
 import Patient from './Components/PD/Patient';
 import DoctorProfile from './Components/DD/DoctorProfile';
 import ApptRequest from './Components/DD/ApptRequest';
+//import PatientProfile from './Components/PD/PatientProfile';
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
       <Route path='/upcoming' element = {<Upcoming/>} />
       <Route path ='/doctorprofile' element ={<DoctorProfile/>} />
       <Route path='/request' element ={<ApptRequest/>}  />
+      {/* <Route path ='/patientProfile' element = {<PatientProfile/>} /> */}
      
      
     
