@@ -5,6 +5,8 @@ import Appointment from "./Appointment";
 import Upcoming from "./Upcoming";
 import ChatRoom from "./Chatroom";
 import { BiBookReader, BiChat, BiCalendarEvent, BiTime, BiBook, BiBookOpen } from "react-icons/bi";
+import { FaUserCircle } from 'react-icons/fa'; // For Patient Icon
+import { MdEdit } from 'react-icons/md';
 
 const Dashboard = () => {
   // State to manage which tab is active
@@ -51,10 +53,18 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <header className="navbar">
-        <h1>Dashboard</h1>
-        <p className="updateprofile" onClick={updateProfile} >Update Profile</p>
-      </header>
+
+<div className="header">
+      <div className="navbar">
+        <FaUserCircle size={40} color="white" />
+        <span className="header__title">WELCOME Dr Aysha </span>
+      </div>
+      <div className="header__right"onClick={updateProfile} >
+        <MdEdit size={30} color="white" />
+        <span className="header__update">Update Profile</span>
+      </div>
+    </div>
+     
       <div className="tabs">
         <span onClick={() => setActiveTab("projects")}><BiBookReader /><p>Dashboard</p></span>
         <span onClick={() => setActiveTab("services")}><BiCalendarEvent /><p>Upcoming Appointments</p> </span>

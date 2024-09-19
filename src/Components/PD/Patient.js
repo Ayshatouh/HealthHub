@@ -9,7 +9,9 @@ import { useNavigate } from 'react-router-dom';
 
 function Patient() {
   const navigate = useNavigate(); // To navigate to other pages
-
+  const updateProfile = () =>{
+    navigate ('/updateProfile')
+  }
   const viewPatient = () => {
     navigate ('/patientProfile');
   }
@@ -20,7 +22,7 @@ function Patient() {
         <FaUserCircle size={40} color="white" />
         <span className="header__title">WELCOME to Patient Dashboard</span>
       </div>
-      <div className="header__right">
+      <div className="header__right"onClick={updateProfile} >
         <MdEdit size={30} color="white" />
         <span className="header__update">Update Profile</span>
       </div>

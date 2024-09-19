@@ -12,6 +12,7 @@ function Upcoming() {
       patientName: 'Emmanuella Oze',
       patientId: 'f/24/0243',
       appointmentType: 'Follow up',
+      reason: 'Counselling',
     },
     {
       date: '30th September 2024',
@@ -19,6 +20,7 @@ function Upcoming() {
       patientName: 'Jacob',
       patientId: 'm/24/0045',
       appointmentType: 'Consultancy',
+      reason: 'Headeach',
     },
     {
       date: '1st October 2024',
@@ -26,6 +28,7 @@ function Upcoming() {
       patientName: 'Haajir',
       patientId: 'f/24/0045',
       appointmentType: 'Consultancy',
+      reason: 'Follow up, morning sickness',
     },
     {
       date: '5th October 2024',
@@ -33,6 +36,7 @@ function Upcoming() {
       patientName: 'Aisha',
       patientId: 'f/24/0045',
       appointmentType: 'Consultancy',
+      reason: 'Cold',
     },
   ];
 
@@ -48,9 +52,9 @@ function Upcoming() {
   const medHistory = ()=>{
     navigate('/patientProfile');
    }
- const visitProfile = ()=>{
-  navigate('/patientProfile');
- }
+//  const visitProfile = ()=>{
+//   navigate('/patientProfile');
+//  }
   
   return (
   <div>
@@ -126,25 +130,16 @@ function Upcoming() {
   <h6> <b> Patient ID :</b> {selectedPatient.patientId}</h6>
   <h6> <b> Patient Diagnosis: </b> {selectedPatient.diagnosis || 'See medical history'} </h6>
   <h6> <b>Appointment type:</b>{selectedPatient.appointmentType} </h6>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.
-
-        </p>
+   <h6> <b>Reason for the visit:</b> {selectedPatient.reason} </h6>     
        
 </ModalBody>
 <ModalFooter>
 <Button onClick={medHistory} >
     View Medical History
   </Button>
-  <Button onClick={visitProfile} >
+  {/* <Button onClick={visitProfile} >
     View Profile
-  </Button>
+  </Button> */}
 </ModalFooter>
 </Modal>
 

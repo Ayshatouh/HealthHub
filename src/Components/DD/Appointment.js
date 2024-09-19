@@ -46,32 +46,6 @@ const Appointment = () => {
         </div>
       </Card>
 
-      {/* <Card>
-        <div className="card-content">
-          <div className="icon">🎁</div>
-          <h3>0</h3>
-          <p>New Messages</p>
-          <button className="view-btn">View</button>
-        </div>
-      </Card> */}
-
-      {/* <Card>
-        <div className="card-content">
-          <div className="icon">⏳</div>
-          <h3>0</h3>
-          <p> Complaint</p>
-          <button className="view-btn">View</button>
-        </div>
-      </Card>
-
-      <Card>
-        <div className="card-content">
-          <div className="icon">❌</div>
-          <h3>0</h3>
-          <p>Cancelled gigs</p>
-          <button className="view-btn">View</button>
-        </div>
-      </Card> */}
      
     </div>
   );

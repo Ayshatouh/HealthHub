@@ -46,28 +46,6 @@ const ChatRoom = () => {
 
     // You would implement WebRTC or another video call solution here
   };
-
-  // const handleStartVideoCall = async () => {
-  //   try {
-  //     const stream = await navigator.mediaDevices.getUserMedia({
-  //       video: { width: 640, height: 480 }, // Adjust resolution as needed
-  //       audio: true,
-  //     });
-
-  //     // Log the stream object to verify that the media stream is being received
-  //     console.log('Media stream:', stream);
-
-  //     if (videoRef.current) {
-  //       console.log('VideoRef is valid:', videoRef.current);
-  //       videoRef.current.srcObject = stream; // Assign stream to video element
-  //     } else {
-  //       console.error('videoRef.current is null');
-  //     }
-  //   } catch (error) {
-  //     console.error('Error accessing media devices:', error);
-  //     alert('Error accessing the webcam: ' + error.message);
-  //   }
-  // };
   
 
   return (
