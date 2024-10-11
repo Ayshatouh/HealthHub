@@ -1,46 +1,53 @@
 import React from 'react';
-import '../Styles/Footer.css'; 
+import '../Styles/Footer.css';
+import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa'; // Font Awesome Icons
 
-const SolutionsSection = () => {
+const Footer = () => {
   return (
-   <>
-     <footer className="footer">
-      <div className="footer-content">
-        
-        <div className="footer-section address">
-          <h4>Our Address</h4>
-          <p>123 Health St.</p>
-          <p>MedCity, H1 2345</p>
-          <p>Country</p>
-        </div>
+    <>
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-section address">
+            <h4>Our Address</h4>
+            <p>123 Health St.</p>
+            <p>Kano State</p>
+            <p>Nigeria</p>
+          </div>
 
-     
-        <div className="footer-section contact">
-          <h4>Contact Us</h4>
-          <p>Email: support@healthhub.com</p>
-          <p>Phone: +2348163338980</p>
-          <p>Working Hours: Mon - Fri, 9AM - 5PM</p>
-        </div>
+          <div className="footer-section contact">
+            <h4>Contact Us</h4>
+            <p>Email: <a href="mailto:support@healthhub@gmail.com">support@healthhub@gmail.com</a></p>
+            <p>Phone: +2348163338980</p>
+            <p>Working Hours: 24/7</p>
+          </div>
 
-   
-        <div className="footer-section social-links">
-          <h4>Follow Us</h4>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a><br />
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a><br />
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <div className="footer-section social-links">
+            <h4>Follow Us</h4>
+            <p>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <FaFacebook /> Facebook
+              </a>
+            </p>
+            <p>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <FaTwitter /> Twitter
+              </a>
+            </p>
+            <p>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin /> LinkedIn
+              </a>
+            </p>
+          </div>
         </div>
+      </footer>
+
+      <div className="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} HealthHub. All rights reserved.</p>
+        <hr />
       </div>
-     
-    </footer>
-     <div className="footer-bottom">
-    
-     <p>&copy; {new Date().getFullYear()} HealthHub. All rights reserved.</p>
-     <hr></hr>
-   </div>
-
-   </>
-    
+    </>
   );
 };
 
-export default SolutionsSection;
+export default Footer;

@@ -11,6 +11,7 @@ import ApptRequest from './Components/DD/ApptRequest';
 import PatientRecord from './Components/PD/PatientRecord'
 import PatientProfile from './Components/DD/PatientProfile';
 import UpdateProfile from './Components/PD/UpdateProfile';
+import WishList from './Components/WishList';
 
 const AppRoutes = () => {
   return (
@@ -26,6 +27,7 @@ const AppRoutes = () => {
       <Route path = '/patientinformation' element ={<PatientRecord/>} />
       <Route path = '/patientProfile' element = {<PatientProfile/>} />
       <Route path = '/updateProfile' element = {<UpdateProfile/>} />
+      <Route path = '/pregnancysupport' element ={<WishList/>} />
       {/* <Route path ='/patientProfile' element = {<PatientProfile/>} /> */}
      
      

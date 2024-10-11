@@ -5,6 +5,7 @@ import { FaVideo } from 'react-icons/fa'; // For Video Consultation Icon
 import './patient.css'; // Create a separate CSS file for styling
 import pic from '../../Asset/Pic3.jpg'
 import { useNavigate } from 'react-router-dom';
+//import '../PD/Sidebar';
 
 
 function Patient() {
@@ -25,10 +26,10 @@ function Patient() {
       <div className="header__right"onClick={updateProfile} >
         <MdEdit size={30} color="white" />
         <span className="header__update">Update Profile</span>
+       
       </div>
     </div>
     <div>
-      
     </div>
     <div className="bodySection">
     <img src={pic} alt="Profile Pic" className='bgPic' />
