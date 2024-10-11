@@ -8,7 +8,7 @@ import pic3 from '../Asset/Pic3.jpg';
 const items = [
   { 
     id: 1,
-    caption: "Eleminating Barriers",
+    caption: "Eliminating  Barriers",
     title: "Empowering access for all",
     imgSrc: pic1
   },
