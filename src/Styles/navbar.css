@@ -5,6 +5,7 @@
     
   }
   .navstyle{
+    padding-top: 20px;
     background-color: #4A90E2;
     color: white;
   }
@@ -38,8 +39,9 @@
   }
   .nav-flex {
     display: flex;
+    padding-left: 20px;
     justify-content: space-around;
-    gap: 20px; /* Adds spacing between the nav items */
+    gap: 40px; /* Adds spacing between the nav items */
     align-items: center; /* Aligns items vertically in the center */
   }
   

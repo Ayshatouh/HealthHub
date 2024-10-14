@@ -1,9 +1,10 @@
 .stats {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 50px;
     background-color: #b0d0f5;
     color: white;
+    text-decoration: none;
   }
   .stats p{
     color: #4A90E2;

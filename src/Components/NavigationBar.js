@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
+import { HashLink } from 'react-router-hash-link';
 import {
   Navbar,
   NavbarBrand,
@@ -25,19 +26,18 @@ function NavigationBar() {
   }
   return (
     <div>
-      <Navbar color='#4A90E2' className='navstyle' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <Navbar color='' className='navstyle' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <NavbarBrand color='white' href="/" className="me-auto light">
          <b className='white'>Health<span className='logo'>Hub </span></b> 
           </NavbarBrand>
-
         {/* Flexbox style applied to Nav items  I also remove navbar*/}
-        <Nav className="nav-flex" >
+        <Nav>
           <div className='d-flex'>
-          <NavItem>
-            <NavLink to="/about/" style={{ color: 'white', textDecoration: 'none', cursor:'pointer', fontWeight: '600' }}  >About Us</NavLink>
+          <NavItem >
+            <HashLink to="/about/" className="nav-flex"  style={{ color: 'white', textDecoration: 'none', cursor:'pointer', fontWeight: '600' }}  >About Us</HashLink>
           </NavItem>
           <NavItem>
-            <NavLink to ="/Services" style={{ color: 'white', textDecoration: 'none', cursor:'pointer', fontWeight:'600' }} >Our Services</NavLink>
+            <HashLink  smooth to ="#starts" className="nav-flex"  style={{ color: 'white', textDecoration: 'none', cursor:'pointer', fontWeight:'600' }} >Our Services</HashLink>
           </NavItem>
            {/* Dropdown menu */}
            <NavItem>

@@ -4,19 +4,25 @@ import '../Styles/Starts.css'; // Add your own styles here
 
 const StatsSection = () => {
   return (
-    <section className="stats">
-      <div className="stat">
-        
-        <p>Search Doctor</p>
+
+   <div>
+  
+    <section className="stats" id='starts' >
+
+
+    <div className="stat">
+        <p>Consultations</p>
       </div>
       <div className="stat">
-       <Link to="/pregnancysupport"> <p>Pregancy Support</p></Link>
+       <Link to="/pregnancysupport"  style={{textDecoration: "none"}} > <p>Pregnancy Support</p></Link>
       </div>
       <div className="stat">
-        <p>registered doctors</p>
+        <p>Child Support</p>
       </div>
+ 
   
     </section>
+   </div>
   );
 };
 
