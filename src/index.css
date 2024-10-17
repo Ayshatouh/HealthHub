@@ -15,7 +15,7 @@ code {
 
 :root {
   --primaryColor: black;
-  --primaryColor2: rgb(3, 66, 110);
+  --primaryColor2:#4A90E2;
   --secondaryColor: rgb(54, 54, 54);
   --secondaryColor2: rgb(34, 34, 34);
   --secondaryColor3: #4A90E2;
@@ -50,6 +50,14 @@ a {
   padding: 7.5px 15px;
   border: 0.5px solid var(--whiteColor);
   background-color: var(--primaryColor2);
+  color: var(--whiteColor);
+  cursor: pointer;
+  transition: 500ms;
+}
+.market_place_btn1 {
+  padding: 7.5px 15px;
+  border: 0.5px solid var(--whiteColor);
+  background-color: var(--secondaryColor2);
   color: var(--whiteColor);
   cursor: pointer;
   transition: 500ms;
@@ -108,6 +116,7 @@ a {
   );
   height: 4vh;
   margin: 0;
+  padding: 0;
 }
 .heading_two {
   font-weight: bold;
@@ -388,7 +397,7 @@ a {
   text-align: center;
   width: 100px;
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 25px;
   outline: #81d101 1px dashed;
   outline-offset: 5px;
@@ -448,7 +457,7 @@ a {
   text-align: center;
   width: 100px;
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 25px;
   outline: #81d101 1px dashed;
   outline-offset: 5px;
@@ -507,7 +516,7 @@ a {
   text-align: center;
   width: 100px;
   color: var(--whiteColor);
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 25px;
   position: absolute;
   border-radius: 10px;
@@ -566,7 +575,7 @@ a {
   text-align: center;
   width: 100px;
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 25px;
   position: absolute;
   border-radius: 10px;
@@ -640,7 +649,7 @@ a {
 
 .architecture-content {
   display: none;
-  font-size: 15px !important;
+  font-size: 12px !important;
   text-align: left;
   position: absolute;
   border-radius: 10px;
