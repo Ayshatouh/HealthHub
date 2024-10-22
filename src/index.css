@@ -58,7 +58,7 @@ a {
 .market_place_btn1 {
   padding: 7.5px 15px;
   border: 0.5px solid var(--whiteColor);
-  background-color: var(--secondaryColor2);
+  /* background-color: var(--); */
   color: var(--whiteColor);
   cursor: pointer;
   transition: 500ms;

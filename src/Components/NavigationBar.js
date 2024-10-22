@@ -43,15 +43,26 @@ export default function NavigationBar() {
                 height: "75px",
               }}
             >
+              <div style={{ marginRight: "5px" }}>
+                <button
+                  // className={"market_place_btn1"}
+                  className="market_place_btn doctor_btn"
+                  onClick={() => {
+                    alert("Coming soon...");
+                  }}
+                >
+                  Patient
+                </button>
+              </div>
               <div>
-                <Button
+                <button
                   className={"market_place_btn"}
                   onClick={() => {
                     alert("Coming soon...");
                   }}
                 >
-                  Get Started
-                </Button>
+                  Doctor
+                </button>
               </div>
             </div>
           </Col>
